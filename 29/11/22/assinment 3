@@ -1,0 +1,20 @@
+#write a program to print the student is pass or not
+sno=int(input('enter the student number :'))
+sname=input('enter the student name :')
+group=input('enter the group of the student :')
+s1=int(input('enter the telugu marks :'))
+s2=int(input('enter the english marks :'))
+s3=int(input('enter the python marks :'))
+if s1>35 and s2>35 and s3>35:
+    print('pass')
+else:
+    print('fail')
+    
+ out put:
+ enter the student number :92735
+enter the student name :jaswanth
+enter the group of the student :air
+enter the telugu marks :39
+enter the english marks :63
+enter the python marks :87
+pass
