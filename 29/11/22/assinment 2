@@ -1,0 +1,33 @@
+#write a program to find to generate the employee tax
+eno=int(input('employee number :'))
+ename=input('employee name :')
+edes=input('employee designation :')
+bs=int(input('employee basic salary :'))
+da=int(input('employee dearness allowance :'))
+ta=int(input('employee travelling allowance :'))
+hra=int(input('employee house rent allowance :'))
+netsalary=bs+da+ta+hra
+if netsalary>100000:
+    tax=netsalary*10/100
+    print(tax)
+elif netsalary>50000:
+    tax=netsalary*7/100
+    print(tax)
+elif netsalary>40000:
+    tax=netsalary*4/100
+    print(tax)
+elif netsalary>20000:
+    tax=netsalary*2/100
+    print(tax)
+else:
+    print('no tax')
+    
+out put:
+employee number :918250
+employee name :jaswanth
+employee designation :developper
+employee basic salary :60000
+employee dearness allowance :500
+employee travelling allowance :200
+employee house rent allowance :5000
+4599.0
