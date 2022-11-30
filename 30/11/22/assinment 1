@@ -1,0 +1,41 @@
+oil=120
+salt=30
+sugar=50
+soap=60
+detergent=120
+phno=int(input('Enter the customer phone number: '))
+name=input('Enter the customer name ')
+add=input('Enter the customer address ')
+ol=int(input('Enter the number of oil packets'))
+sa=int(input('Enter the number of salt packets'))
+sp=int(input('Enter the number of soap packets'))
+dt=int(input('Enter the number of derergent packets'))
+bill=(oil*ol)+(salt*sa)+(soap*sp)+(detergent*dt)
+if bill>=3000:
+    tax=bill*5/100
+elif bill>=2000:
+    tax=bill*7/100
+elif bill>=1000:
+    tax=bill*10/100
+elif bill>=500:
+    tax=bill*15/100
+else:
+    tax=100
+tax=tax+bill
+print('customer phone number:',phno)
+print('customer name:',name)
+print('tax=',tax)
+print('bill:')
+
+output:
+Enter the customer phone number: 00000000001
+Enter the customer name Ramesh
+Enter the customer address eluru
+Enter the number of oil packets2
+Enter the number of salt packets4
+Enter the number of soap packets5
+Enter the number of derergent packets1
+customer phone number: 1
+customer name: Ramesh
+tax= 897.0
+bill:
